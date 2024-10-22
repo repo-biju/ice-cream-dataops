@@ -4,6 +4,9 @@ environment:
   type: test
   selected:
   - modules/
+  - modules/bootcamp/data_foundation
+  - modules/bootcamp/ice_cream_api
+  - modules/bootcamp/use_cases/oee
 
 variables:
   modules:
@@ -25,6 +28,13 @@ variables:
       readonly_source_id: <NotSet>
       # OBJECT ID FOR TEST/PROD ICAPI EXTRACTORS ENTRA GROUP
       icapi_extractors_source_id: <NotSet>
+      #variable to store the sourceId of the test environment
+      data_developer_source_id: 4616309c-3ec0-48ec-afd2-b8767250d03f
+      data_extractor_source_id: 64177f81-1fcf-43c9-a1f8-df0b56181212
+      data_pipeline_source_id: c90ff008-00a5-4bc0-b028-ca7fc2eb80a3
+      #data source eternal id
+      
+
       # Client Ids
       data_pipeline_oee_client_id: ${DATA_PIPELINE_OEE_CLIENT_ID} # replaced by .env
       data_pipeline_oee_client_secret: ${DATA_PIPELINE_OEE_CLIENT_SECRET} # replaced by .env
@@ -35,3 +45,8 @@ variables:
       use_cases:
         oee:
           uc_oee_ds_external_id: ds_uc_oee
+          #uc_oee_ds_external_id_new: ds_uc_oee_new
+
+      #icfsd_ds_external_id_new: ds_icfsd_new
+
+      
