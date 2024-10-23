@@ -35,7 +35,8 @@ variables:
       data_pipeline_source_id: 07ea9117-1689-4dc8-a93b-df986bcc81c6
       #make variable
       #scheduleHourly: *5****
-      #data source eternal id
+      #data source eternal id 
+      #new checkin
       
 
       # Client Ids
