@@ -1,7 +1,7 @@
 environment:
-  name: test
-  project: cdf-bootcamp-58-test
-  type: test
+  name: prod
+  project: cdf-bootcamp-58-prod
+  type: prod
   selected:
   - modules/
   - modules/bootcamp/data_foundation
@@ -11,7 +11,7 @@ environment:
 variables:
   modules:
     bootcamp:
-      CDF_PROJECT: cdf-bootcamp-58-test # ex. cdf-bootcamp-01-test
+      CDF_PROJECT: cdf-bootcamp-58-prod # ex. cdf-bootcamp-01-test
       IDP_CLIENT_ID: ${IDP_CLIENT_ID} # replaced by .env
       IDP_CLIENT_SECRET: ${IDP_CLIENT_SECRET} # replaced by .env
       IDP_TENANT_ID: ${IDP_TENANT_ID} # replaced by .env
@@ -21,17 +21,17 @@ variables:
       IDP_TOKEN_URL: ${IDP_TOKEN_URL} # replaced by .env
       # Groups
       # OBJECT ID FOR TEST/PROD DATA PIPELINE OEE ENTRA GROUP
-      data_pipeline_oee_source_id: c90ff008-00a5-4bc0-b028-ca7fc2eb80a3
+      data_pipeline_oee_source_id: 07ea9117-1689-4dc8-a93b-df986bcc81c6
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
-      readwrite_source_id: 9bcf7b59-2e1f-473c-9c24-1dc1fd0e86a9
+      readwrite_source_id: e3bd9208-961f-4320-b70a-b03228f86d17
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
-      readonly_source_id: 9bcf7b59-2e1f-473c-9c24-1dc1fd0e86a9
+      readonly_source_id: e3bd9208-961f-4320-b70a-b03228f86d17
       # OBJECT ID FOR TEST/PROD ICAPI EXTRACTORS ENTRA GROUP
-      icapi_extractors_source_id: 64177f81-1fcf-43c9-a1f8-df0b56181212
+      icapi_extractors_source_id: 5865392a-df9d-488a-b103-b05503441878
       #variable to store the sourceId of the test environment
-      data_developer_source_id: 4616309c-3ec0-48ec-afd2-b8767250d03f
-      data_extractor_source_id: 64177f81-1fcf-43c9-a1f8-df0b56181212
-      data_pipeline_source_id: c90ff008-00a5-4bc0-b028-ca7fc2eb80a3
+      data_developer_source_id: 80a6f493-807d-45ac-b384-17f653697d36
+      data_extractor_source_id: 5865392a-df9d-488a-b103-b05503441878
+      data_pipeline_source_id: 07ea9117-1689-4dc8-a93b-df986bcc81c6
 
       #scheduleHourly: *5****
       #data source eternal id
@@ -47,8 +47,3 @@ variables:
       use_cases:
         oee:
           uc_oee_ds_external_id: ds_uc_oee
-
-
-
-
-      
