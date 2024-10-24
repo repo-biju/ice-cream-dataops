@@ -26,7 +26,7 @@ variables:
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
       readwrite_source_id: e3bd9208-961f-4320-b70a-b03228f86d17
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
-      readonly_source_id: e3bd9208-961f-4320-b70a-b03228f86d17
+      readonly_source_id: 2066f621-bac8-4035-bb09-bee4455b50d1
       # OBJECT ID FOR TEST/PROD ICAPI EXTRACTORS ENTRA GROUP
       icapi_extractors_source_id: 5865392a-df9d-488a-b103-b05503441878
       #variable to store the sourceId of the test environment
